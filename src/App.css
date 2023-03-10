@@ -176,3 +176,14 @@ footer .inner ul li{
   margin: 10px 0px 10px 0px;
   border: 1px solid #000;
 }
+footer .inner ul li span{
+  margin-right: 10px;
+  color: #555;
+  font-weight: bold;
+}
+footer .inner ul li span:hover{
+  color: #978feb;
+}
+footer .inner ul li p{
+  display: inline;
+}

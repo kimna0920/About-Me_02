@@ -1,9 +1,13 @@
 /* eslint-disable */
 import {React, useState} from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './App.css';
 import About from './pages/About';
 import profile from './img/profile.jpeg';
 import background from './img/background.mp4';
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {faMobile} from "@fortawesome/free-solid-svg-icons";
+
 
 function App() {
   let [modal, setModal] = useState(false);
@@ -50,15 +54,17 @@ function App() {
           <div className='inner'>
             <ul>
               <li>
-                <i className="fa-solid fa-envelope"></i>
-                <p>na0920kim@gmail.com</p>
+                <span><FontAwesomeIcon icon={faEnvelope}/></span>
+                <p>
+                  na0920kim@gmail.com
+                </p>
               </li>
               <li>
-                <i className="fa-solid fa-mobile"></i>
+                <span><FontAwesomeIcon icon={faMobile}/></span>
                 <p>010-7433-8551</p>
               </li>
               <li>
-                <i className="fa-solid fa-mobile"></i>
+                <span>github</span>
                 <p>kimna0920</p>
               </li>
             </ul>
